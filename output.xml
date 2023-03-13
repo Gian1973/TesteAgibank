@@ -1,132 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230312 22:24:15.820" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230312 23:19:11.525" rpa="false" schemaversion="3">
 <suite id="s1" name="Agi Testes" source="C:\TesteAgibank\RobotFramework\WebTesting\agi_testes.robot">
-<test id="s1-t1" name="Testes 1- Pesquisar um termo que aparece em vários artigos e verificar se os resultados retornados são relevantes e correspondem ao termo pesquisado" line="21">
+<test id="s1-t1" name="Testes 1- Pesquisar um termo que aparece em vários artigos e verificar se os resultados retornados são relevantes e correspondem ao termo pesquisado" line="20">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${BLOGDOAGI_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230312 22:24:15.987" level="INFO">Opening browser 'chrome' to base url 'https://blogdoagi.com.br/'.</msg>
-<status status="PASS" starttime="20230312 22:24:15.987" endtime="20230312 22:24:18.284"/>
+<msg timestamp="20230312 23:19:11.770" level="INFO">Opening browser 'chrome' to base url 'https://blogdoagi.com.br/'.</msg>
+<status status="PASS" starttime="20230312 23:19:11.770" endtime="20230312 23:19:15.092"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230312 22:24:18.285" endtime="20230312 22:24:18.415"/>
+<status status="PASS" starttime="20230312 23:19:15.092" endtime="20230312 23:19:15.217"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@id='search-open']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:18.417" level="INFO">Clicking element '//button[@id='search-open']'.</msg>
-<status status="PASS" starttime="20230312 22:24:18.415" endtime="20230312 22:24:18.495"/>
+<msg timestamp="20230312 23:19:15.218" level="INFO">Clicking element '//button[@id='search-open']'.</msg>
+<status status="PASS" starttime="20230312 23:19:15.218" endtime="20230312 23:19:15.322"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>(//input[@name='s'])[1]</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230312 22:24:18.496" endtime="20230312 22:24:18.512"/>
+<status status="PASS" starttime="20230312 23:19:15.322" endtime="20230312 23:19:15.340"/>
 </kw>
-<kw name="Input Search">
+<kw name="Input Search 1">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>(//input[contains(@placeholder,'Pesquisar …')])[1]</arg>
 <arg>Sua carreira</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:18.513" level="INFO">Typing text 'Sua carreira' into text field '(//input[contains(@placeholder,'Pesquisar …')])[1]'.</msg>
-<status status="PASS" starttime="20230312 22:24:18.513" endtime="20230312 22:24:18.611"/>
+<msg timestamp="20230312 23:19:15.341" level="INFO">Typing text 'Sua carreira' into text field '(//input[contains(@placeholder,'Pesquisar …')])[1]'.</msg>
+<status status="PASS" starttime="20230312 23:19:15.340" endtime="20230312 23:19:15.442"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>(//input[contains(@placeholder,'Pesquisar …')])[1]</arg>
-<arg>Quero a vaga</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:18.611" level="INFO">Typing text 'Quero a vaga' into text field '(//input[contains(@placeholder,'Pesquisar …')])[1]'.</msg>
-<status status="PASS" starttime="20230312 22:24:18.611" endtime="20230312 22:24:18.666"/>
-</kw>
-<status status="PASS" starttime="20230312 22:24:18.513" endtime="20230312 22:24:18.666"/>
+<status status="PASS" starttime="20230312 23:19:15.340" endtime="20230312 23:19:15.442"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230312 22:24:20.668" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230312 22:24:18.667" endtime="20230312 22:24:20.668"/>
+<msg timestamp="20230312 23:19:17.443" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230312 23:19:15.442" endtime="20230312 23:19:17.443"/>
 </kw>
 <kw name="Input Submit">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//input[contains(@type,'submit')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:20.670" level="INFO">Clicking element '(//input[contains(@type,'submit')])[1]'.</msg>
-<status status="PASS" starttime="20230312 22:24:20.668" endtime="20230312 22:24:20.995"/>
+<msg timestamp="20230312 23:19:17.447" level="INFO">Clicking element '(//input[contains(@type,'submit')])[1]'.</msg>
+<status status="PASS" starttime="20230312 23:19:17.446" endtime="20230312 23:19:18.977"/>
 </kw>
-<status status="PASS" starttime="20230312 22:24:20.668" endtime="20230312 22:24:20.996"/>
+<status status="PASS" starttime="20230312 23:19:17.445" endtime="20230312 23:19:18.979"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230312 22:24:20.996" endtime="20230312 22:24:23.185"/>
+<status status="PASS" starttime="20230312 23:19:18.980" endtime="20230312 23:19:21.214"/>
 </kw>
-<status status="PASS" starttime="20230312 22:24:15.987" endtime="20230312 22:24:23.186"/>
+<status status="PASS" starttime="20230312 23:19:11.770" endtime="20230312 23:19:21.214"/>
 </test>
-<test id="s1-t2" name="Testes 2- Pesquisar um termo que não aparece em nenhum artigo e verificar se a mensagem &quot;Nenhum resultado encontrado&quot; é exibida" line="33">
+<test id="s1-t2" name="Testes 2- Pesquisar um termo que não aparece em nenhum artigo e verificar se a mensagem &quot;Nenhum resultado encontrado&quot; é exibida" line="30">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${BLOGDOAGI_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230312 22:24:23.188" level="INFO">Opening browser 'chrome' to base url 'https://blogdoagi.com.br/'.</msg>
-<status status="PASS" starttime="20230312 22:24:23.188" endtime="20230312 22:24:25.385"/>
+<msg timestamp="20230312 23:19:21.214" level="INFO">Opening browser 'chrome' to base url 'https://blogdoagi.com.br/'.</msg>
+<status status="PASS" starttime="20230312 23:19:21.214" endtime="20230312 23:19:23.356"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230312 22:24:25.385" endtime="20230312 22:24:25.505"/>
+<status status="PASS" starttime="20230312 23:19:23.356" endtime="20230312 23:19:23.491"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@id='search-open']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:25.506" level="INFO">Clicking element '//button[@id='search-open']'.</msg>
-<status status="PASS" starttime="20230312 22:24:25.505" endtime="20230312 22:24:25.584"/>
+<msg timestamp="20230312 23:19:23.492" level="INFO">Clicking element '//button[@id='search-open']'.</msg>
+<status status="PASS" starttime="20230312 23:19:23.491" endtime="20230312 23:19:23.591"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>(//input[@name='s'])[1]</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230312 22:24:25.585" endtime="20230312 22:24:25.601"/>
+<status status="PASS" starttime="20230312 23:19:23.592" endtime="20230312 23:19:23.608"/>
 </kw>
-<kw name="Input Search">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>(//input[contains(@placeholder,'Pesquisar …')])[1]</arg>
-<arg>Sua carreira</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:25.601" level="INFO">Typing text 'Sua carreira' into text field '(//input[contains(@placeholder,'Pesquisar …')])[1]'.</msg>
-<status status="PASS" starttime="20230312 22:24:25.601" endtime="20230312 22:24:25.695"/>
-</kw>
+<kw name="Input Search 2">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>(//input[contains(@placeholder,'Pesquisar …')])[1]</arg>
 <arg>Quero a vaga</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:25.697" level="INFO">Typing text 'Quero a vaga' into text field '(//input[contains(@placeholder,'Pesquisar …')])[1]'.</msg>
-<status status="PASS" starttime="20230312 22:24:25.695" endtime="20230312 22:24:25.749"/>
+<msg timestamp="20230312 23:19:23.609" level="INFO">Typing text 'Quero a vaga' into text field '(//input[contains(@placeholder,'Pesquisar …')])[1]'.</msg>
+<status status="PASS" starttime="20230312 23:19:23.609" endtime="20230312 23:19:23.711"/>
 </kw>
-<status status="PASS" starttime="20230312 22:24:25.601" endtime="20230312 22:24:25.751"/>
+<status status="PASS" starttime="20230312 23:19:23.608" endtime="20230312 23:19:23.711"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230312 22:24:27.751" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230312 22:24:25.751" endtime="20230312 22:24:27.751"/>
+<msg timestamp="20230312 23:19:25.712" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230312 23:19:23.711" endtime="20230312 23:19:25.713"/>
 </kw>
 <kw name="Input Submit">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//input[contains(@type,'submit')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 22:24:27.754" level="INFO">Clicking element '(//input[contains(@type,'submit')])[1]'.</msg>
-<status status="PASS" starttime="20230312 22:24:27.753" endtime="20230312 22:24:28.081"/>
+<msg timestamp="20230312 23:19:25.713" level="INFO">Clicking element '(//input[contains(@type,'submit')])[1]'.</msg>
+<status status="PASS" starttime="20230312 23:19:25.713" endtime="20230312 23:19:26.383"/>
 </kw>
-<status status="PASS" starttime="20230312 22:24:27.753" endtime="20230312 22:24:28.081"/>
+<status status="PASS" starttime="20230312 23:19:25.713" endtime="20230312 23:19:26.383"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230312 22:24:28.081" endtime="20230312 22:24:30.257"/>
+<status status="PASS" starttime="20230312 23:19:26.384" endtime="20230312 23:19:28.616"/>
 </kw>
-<status status="PASS" starttime="20230312 22:24:23.188" endtime="20230312 22:24:30.258"/>
+<status status="PASS" starttime="20230312 23:19:21.214" endtime="20230312 23:19:28.617"/>
 </test>
 <doc>Exemplo de teste em Robot Framework</doc>
-<status status="PASS" starttime="20230312 22:24:15.837" endtime="20230312 22:24:30.262"/>
+<status status="PASS" starttime="20230312 23:19:11.525" endtime="20230312 23:19:28.619"/>
 </suite>
 <statistics>
 <total>
